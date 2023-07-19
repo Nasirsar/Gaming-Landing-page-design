@@ -146,7 +146,54 @@
 .game-logo-heading> p{
     font-size: 15px;
 }
- 
+ .play-info{
+    font-size:50px ;
+    font-weight: 300px;
+    background-image: linear-gradient(to bottom,#F948B2, #8758F1);
+    color: transparent;
+    -webkit-background-clip: text;
+ }
+ .download-info{
+    font-size:50px ;
+    font-weight: 300px;
+    color-scheme: #0B0223;
+ }
+.download-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    position: relative;
+}
+.download-container-text> p{
+    font-size: 13px;
+    margin-left: 80px;
+
+}
+.text-1{
+    margin-left: 26px;
+}
+.text-3{
+    margin-left: 28px;
+
+}
+.install{
+    margin-left: 80px;
+}
+.download-img{
+    width: 50opx; 
+    height: 500px;
+    margin-top: 50px;  
+}
+.small-img{
+    position:absolute;
+    left:685px;
+    width: 10px;
+    height: 10px;
+    bottom: 150px;
+
+}
+/* tablet screen */
 
 @media screen and (min-width:425px) and (max-width:768px) {
     .container {
@@ -206,7 +253,20 @@
     .game-logo-heading> p{
         font-size: 13px;
     }
+    .download-container{
+        position: relative;
+        flex-direction: column;
+    }
+    .small-img{
+        position:absolute;
+        left:-45px;
+        width: 10px;
+        height: 10px;
+        bottom: 170px;
+    
+    }
 }
+/* mobile screen */
 
 @media screen and (max-width:425px) {
 
@@ -278,4 +338,37 @@
     .game-logo-heading> p{
         font-size: 9px;
     }
+    .download-container{
+        flex-direction: column;
+       
+    }
+    
+    .download-container-text> p{
+        font-size: 9px;
+         
+    }
+    .download-container-text h1{
+        font-size:25px ;
+    }
+    .download-img{
+        display: flex;
+        align-items: center;
+    }
+    .download-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 150px;
+        position: relative;
+    }
+    .small-img{
+        position:absolute;
+        left:-45px;
+        width: 10px;
+        height: 10px;
+        bottom: 170px;
+    
+    }
+    
+         
 }
