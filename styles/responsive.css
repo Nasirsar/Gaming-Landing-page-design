@@ -1,4 +1,4 @@
-.container{
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,39 +6,45 @@
     max-width: 1440px;
     margin: 0px auto;
     background-color: #f1eded;
-   
+
 }
-.nav-container{
+
+.nav-container {
     width: 50%;
     display: flex;
     align-items: center;
 }
-.nav-container h1{
+
+.nav-container h1 {
     font-size: 20px;
     font-weight: 100px;
-    color:#0B0223 ;
+    color: #0B0223;
 }
-.nav-container img{
+
+.nav-container img {
     width: 40px;
-    object-fit:contain;
+    object-fit: contain;
     margin: 10px;
 }
-.contain-name-col{
-    color:  #e218c0; 
+
+.contain-name-col {
+    color: #e218c0;
 }
-.nav-items{
+
+.nav-items {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
 
- .nav-item-1{
+.nav-item-1 {
     display: flex;
     gap: 20px;
     color: #e7e5ec;
- }
- .nav-item-2{
+}
+
+.nav-item-2 {
     gap: 20px;
     display: flex;
     align-items: center;
@@ -46,19 +52,181 @@
     border-radius: 5px;
     background: rgb(225, 221, 245);
     padding: 10px;
-    
-} 
-.nav-items a{
-    text-decoration: none;
-}
-@media screen and (min-width:425px) and (max-width:768px) {
-    .container{
-        flex-direction: column;
-    }
 
 }
-/* @media screen and (max-width:425px) {
-    .container, .nav-container, .nav-items, .nav-item-1, .nav-item-2{
+
+.nav-items a {
+    text-decoration: none;
+}
+.banner-container{
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 40px 40px 0 ;
+}
+.banner-text{
+    width: 50%;
+    margin-left: 200px;
+    background-image: url(../images/Group\ 14.png);
+    padding: 20px;
+  
+}
+.banner-img{
+    width: 50%;
+    margin-right: 200px;
+}
+.banner-text h1{
+    background-image: linear-gradient(to bottom, #F948B2, #8758F1);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 100px;
+    font-weight: 700;
+}
+.banner-text h3{
+    color: #0B0223;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 45px;
+    
+
+}
+.banner-text> .banner-review{
+    display: flex;
+
+}
+.banner-review> img{
+    width: 50px;
+    height: 50px;
+}
+.banner-review> p{
+    font-size: 20px;
+}
+.banner-container, .btn-1{
+    padding: 10px;
+    border-radius: 10px;
+    
+
+}
+.btn-1{
+    background-color:#FF42A5;
+}
+.btn-2{
+    background: #4EC5F7;
+}
+.banner-container, .btn-2{
+    padding: 10px;
+    border-radius: 10px;
+}
+.btn-primary{
+    gap: 10px;
+}
+@media screen and (min-width:425px) and (max-width:768px) {
+    .container {
         flex-direction: column;
+        
     }
-} */
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .banner-img{
+        margin: 0px;
+        width: 80%;
+        
+    }
+    .banner-img img{
+        width: 100%;
+        
+    }
+    .banner-text{
+        width: 90%;   
+        margin: 0 auto; 
+    }
+    
+    .banner-text> .banner-review{
+        flex-direction: row;
+        margin-left: 15%;
+       
+    
+    }
+    .banner-text> h1{
+        margin-left: 15%;
+        
+    }
+    .banner-text> h3{
+        margin-left: 15%;
+    }
+    .btn-primary> .btn-1{
+        margin-left: 15%;
+
+    }
+    .btn-primary> .btn-2{
+        margin-left: 10%;
+
+    }
+
+
+   
+
+}
+
+@media screen and (max-width:425px) {
+
+    .container,
+    .nav-container,
+    .nav-items,
+    .nav-item-1,
+    .nav-item-2{ 
+        flex-direction: column;
+        margin-bottom: 10px;
+        }
+        
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .banner-text h1{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .banner-text h3{      
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .banner-img{
+        margin: 0px;
+        width: 80%;
+        
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    .banner-text{
+        width: 90%;   
+        margin: 0 auto; 
+    }
+    
+    .banner-text> .banner-review{
+        flex-direction: row;
+        margin-left: 15%;
+       
+    
+    }
+    .banner-text> h1{
+        margin-left: 15%;
+        
+    }
+    .banner-text> h3{
+        margin-left: 15%;
+    }
+    .btn-primary> .btn-1{
+        margin-left: 15%;
+
+    }
+    .btn-primary> .btn-2{
+        margin-left: 10%;
+
+    }
+
+
+
+}
