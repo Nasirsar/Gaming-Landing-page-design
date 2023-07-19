@@ -121,6 +121,33 @@
 .btn-primary{
     gap: 10px;
 }
+.game-logo-heading{
+    text-align: center;
+}
+.game-logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.game-heading-1{
+    font-size: 50px;
+    color-scheme: #0B0223;
+    font-weight: 300px;
+}
+.game-heading-2{
+    font-size:50px ;
+    font-weight: 300px;
+    background-image: linear-gradient(to bottom,#F948B2, #8758F1);
+    color: transparent;
+    -webkit-background-clip: text;
+
+}
+.game-logo-heading> p{
+    font-size: 15px;
+}
+ 
+
 @media screen and (min-width:425px) and (max-width:768px) {
     .container {
         flex-direction: column;
@@ -162,12 +189,23 @@
     }
     .btn-primary> .btn-2{
         margin-left: 10%;
-
     }
-
-
-   
-
+    .game-logo-container{
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .game-heading-1{
+        font-size: 30px;
+        font-weight: 300px;
+    }
+    .game-heading-2{
+        font-size:30px ;
+        font-weight: 300px;
+    }
+    .game-logo-heading> p{
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width:425px) {
@@ -226,7 +264,18 @@
         margin-left: 10%;
 
     }
-
-
-
+    .game-logo-container{
+        flex-direction: column;
+    }
+    .game-heading-1{
+        font-size: 20px;
+        font-weight: 300px;
+    }
+    .game-heading-2{
+        font-size:20px ;
+        font-weight: 300px;
+    }
+    .game-logo-heading> p{
+        font-size: 9px;
+    }
 }
